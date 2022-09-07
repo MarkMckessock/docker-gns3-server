@@ -7,7 +7,5 @@ if [ ! -e $CONFIG ]; then
 	cp /config.ini /data
 fi
 
-python3 /CiscoIOUKeygen.py > .iourc
-echo [license] > iourc1 | cat .iourc | grep ";" >> iourc1
-mv iourc1 /data/.iourc
+python3 /CiscoIOUKeygen.py > /data/.iourc
 gns3server -A --config /data/config.ini
