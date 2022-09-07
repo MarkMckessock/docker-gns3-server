@@ -30,6 +30,7 @@ RUN apt-get install -y vpcs ubridge dynamips
 # Install the magic wrapper.
 ADD ./start.sh /start.sh
 ADD ./config.ini /config.ini
+ADD ./CiscoIOUKeygen.py /CiscoIOUKeygen.py
 ADD ./requirements.txt /requirements.txt
 RUN pip3 install --no-cache-dir -r /requirements.txt
 
