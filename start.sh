@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ "${CONFIG}x" -eq "x" ]; then
+if [[ -z "${CONFIG}" ]]; then
 	CONFIG=/data/config.ini
 fi
 
